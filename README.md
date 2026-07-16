@@ -1,24 +1,45 @@
-# GenLayer DAO
+# ⚖️ GenLayer DAO
 
-A decentralized autonomous organization built on **GenLayer**, an Intelligent Blockchain. Instead of relying solely on token-weighted voting for every proposal, this DAO introduces an **AI Constitution Guard**. Proposals are evaluated preemptively by Intelligent Validator Nodes against the DAO's immutable Constitution. 
+A decentralized autonomous organization built on **GenLayer**, an Intelligent Blockchain. Instead of relying solely on token-weighted voting for every proposal, this DAO introduces an **AI Constitution Guard**, **Automated Delivery Payouts**, and **Continuous Scope Drift Auditing**.
 
-## The Concept: AI Constitution Guard
+## 🚀 The Ultimate AI Governance Protocol
 
-The GenLayer protocol allows intelligent contracts to execute non-deterministic AI logic (`gl.nondet.exec_prompt`), followed by an equivalence principle (`gl.eq_principle.prompt_comparative`) to enforce consensus among network validators.
+### 1. The AI Constitution Guard (`create_proposal`)
+- **Preemptive Filtering**: When a user submits a proposal requesting DAO funds, the Lead Validator runs the proposal through an LLM prompt containing the DAO's immutable Constitution.
+- **Deep Web Fact-Checking (`gl.nondet.web.get`)**: The GenVM Intelligent Contract autonomously browses the web to cross-reference claims (e.g., catching scammers claiming to be "Ethereum founders").
+- **Consensus**: If validators reach subjective consensus on the AI's reasoning (ACCEPT/REJECT), the proposal is marked `ACTIVE` or blocked entirely.
 
-1. **Submission**: A user submits a proposal requesting DAO funds.
-2. **AI Evaluation**: The Lead Validator runs the proposal through an LLM prompt containing the DAO's Constitution (Rules against scams, disproportionate enrichment, etc.).
-3. **Consensus**: Other validators verify the AI's conclusion. If subjective consensus is reached on the reasoning and decision (ACCEPT/REJECT), the GenLayer Intelligent Contract transitions the state.
-4. **Execution**: The proposal is marked as `ACTIVE` (ready for voting) or `REJECTED` (blocked from voting), saving the DAO from spam or misaligned funds.
+### 2. Automated Delivery Verification & Payout (`submit_delivery` & `verify_and_payout`)
+- Developers don't need manual community votes to get paid for milestones.
+- They submit a live URL of their shipped product. The GenVM AI visits the URL, reads the deployed code/site, verifies it matches the original proposal, and natively transfers the GEN bounty via `.payable` interfaces if successful.
 
-## Architecture
+### 3. Continuous Scope Drift Auditing (`audit_live_project`)
+- Protects the treasury *after* funding. 
+- The AI continuously checks the live project's website and compares it to the original proposal to detect "Scope Creep" or rug pulls, slashing reputation or freezing funds if a drift is detected.
 
-- **Frontend**: React + Vite + TailwindCSS. Uses the `genlayer-js` SDK to communicate with the GenLayer network.
-- **Backend/Intelligent Contract**: Python (`contracts/dao.py`). Follows the GenLayer intelligent contract paradigm.
+### 4. Dynamic Constitution Amendments (`amend_constitution`)
+- The community can vote to update the DAO's core rules. Once passed, the AI's system prompt is permanently updated on-chain to reflect the new societal norms of the DAO.
 
-## Development
+### 5. Multi-Sig Admin Controls
+- Secure `propose_admin_action` and `approve_admin_action` functions ensure that critical DAO parameters are protected by a decentralized moderation council.
 
+### 6. Awwwards-Tier Web3 Frontend
+- Built using premium Web3 Brutalist design principles.
+- Features dynamic Framer Motion animations, glitch effects, neon borders, strict dark modes (`#050505`), and Lenis smooth scrolling for a world-class user experience.
+
+## 🧠 Architecture
+
+- **Frontend**: React + Vite + TailwindCSS + Framer Motion. Uses the `genlayer-js` SDK to communicate with the GenLayer network.
+- **Backend/Intelligent Contract**: Python (`contracts/dao.py`). Follows the GenLayer intelligent contract paradigm, using `DynArray` and `TreeMap` for strict deterministic storage.
+
+## 🛠️ Setup & Development
+
+1. Clone the repository and install dependencies:
 ```bash
 npm install
+```
+2. Make sure GenLayer Studio / Simulator is running.
+3. Run the development server:
+```bash
 npm run dev
 ```
