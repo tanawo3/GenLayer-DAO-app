@@ -1,0 +1,6 @@
+{
+  "name": "GenLayer DAO",
+  "description": "An AI-Moderated DAO utilizing GenLayer consensus for proactive proposal validation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
